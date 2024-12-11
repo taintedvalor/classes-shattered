@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "classesshattered",
 	"version": "${version}",
-	"name": "Classes Shattered",
+	"name": "Origin Classes Shattered",
 	"description": "Shatters Origin classes into shards Allowing it to be obtained within survival",
 	"authors": [
 		"valor"
