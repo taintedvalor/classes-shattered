@@ -13,7 +13,7 @@ import shatteredclasses.shatteredclasses.Classesshattered;
 public class ModItems {
 
 
-    //
+    //class shard Item
     public static final Item class_shard = registerItem("class_shard", new Item(new FabricItemSettings().maxCount(16)));
 
 
