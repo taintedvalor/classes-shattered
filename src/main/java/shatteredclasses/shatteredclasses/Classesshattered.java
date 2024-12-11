@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import shatteredclasses.shatteredclasses.item.ModItems;
+import shatteredclasses.shatteredclasses.util.ModLootTableModifiers;
 
 public class Classesshattered implements ModInitializer {
 	public static final String MOD_ID = "classesshattered";
@@ -16,6 +17,7 @@ public class Classesshattered implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModLootTableModifiers.modifyLootTables();
 		ModItems.registerModItems();
 		LOGGER.info("initializing classes Shattered");
 	}
