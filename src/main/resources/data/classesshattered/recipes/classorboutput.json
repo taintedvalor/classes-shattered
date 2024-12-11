@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 0 ",
+    "000",
+    " 0 "
+  ],
+  "key": {
+    "0": {
+      "item": "classesshattered:class_shard"
+    }
+  },
+  "result": {
+    "item": "origins:orb_of_origin",
+    "count": 1,
+    "data": {
+      "Targets": [
+        {
+          "Layer": "origins-classes:class"
+        }
+      ],
+      "display": {
+        "Name": "{\"text\":\"Orb of classes\",\"color\":\"yellow\",\"italic\":false}"
+      }
+    }
+  }
+}
