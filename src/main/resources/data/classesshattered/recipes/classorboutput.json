@@ -21,6 +21,9 @@
       ],
       "display": {
         "Name": "{\"text\":\"Orb of classes\",\"color\":\"yellow\",\"italic\":false}"
+      },
+      "EntityTag": {
+        "variant": "orb_of_classes"
       }
     }
   }
