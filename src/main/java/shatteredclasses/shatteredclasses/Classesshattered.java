@@ -2,6 +2,10 @@ package shatteredclasses.shatteredclasses;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import shatteredclasses.shatteredclasses.item.ModItems;
@@ -17,8 +21,14 @@ public class Classesshattered implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("Logging classes Shattered");
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			ResourceManagerHelper.registerBuiltinResourcePack(
+					new Identifier(MOD_ID, "classesshattered"),
+					modContainer,
+					ResourcePackActivationType.DEFAULT_ENABLED);
+		});
 		ModLootTableModifiers.modifyLootTables();
 		ModItems.registerModItems();
-		LOGGER.info("initializing classes Shattered");
 	}
 }
